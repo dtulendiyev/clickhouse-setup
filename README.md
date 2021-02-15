@@ -14,7 +14,7 @@ docker run -d --name clickhouse-server -p 9000:9000 --ulimit nofile=262144:26214
 - Run client
 
 ```
-docker run -it --rm --link clickhouse-server:clickhouse-server yandex/clickhouse-client  --host clickhouse-server
+docker run --network=clickhouse-net -it --rm --link clickhouse-01:clickhouse-01 yandex/clickhouse-client  --host clickhouse-01
 ```
 
 Now you can see if it success setup or not.

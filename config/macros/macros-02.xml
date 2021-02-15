@@ -1,7 +1,7 @@
 <yandex>
-    <macros>
-        <replica>clickhouse-02</replica>
-        <shard>02</shard>
-        <layer>01</layer>
-    </macros>
+	<macros>
+		<cluster>livereach_01</cluster>
+		<shard>1</shard>
+		<replica>2</replica>
+	</macros>
 </yandex>
